@@ -9,3 +9,9 @@
 
 http://php.net/manual/fr/function.mt-rand.php
 */
+
+echo rand($_POST["minimum"], $_POST["maximum"]);
+
+
+
+
