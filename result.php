@@ -9,8 +9,13 @@
 
 http://php.net/manual/fr/function.mt-rand.php
 */
+if (intval($_POST["minimum"]) && intval($_POST["maximum"])) {
+    echo rand($_POST["minimum"], $_POST["maximum"]);
+}
+else {
+    echo "Bah alors ? On modifie avec la console ?";
+}
 
-echo rand($_POST["minimum"], $_POST["maximum"]);
 
 
 
